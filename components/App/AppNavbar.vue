@@ -16,31 +16,31 @@ const items = [
     path: '/',
     icon: 'i-solar-home-smile-outline',
   },
-  {
-    name: 'Projects',
-    path: '/projects',
-    icon: 'i-solar-folder-with-files-outline',
-  },
-  {
-    name: 'Articles',
-    path: '/articles',
-    icon: 'i-solar-document-add-outline',
-  },
-  {
-    name: 'Lab',
-    path: '/lab',
-    icon: 'i-solar-programming-outline',
-  },
-  {
-    name: "What's in my bag?",
-    path: '/whats-in-my-bag',
-    icon: 'i-solar-backpack-outline',
-  },
-  {
-    name: 'Bookmarks',
-    path: '/bookmarks',
-    icon: 'i-solar-bookmark-outline',
-  },
+  // {
+  //   name: 'Projects',
+  //   path: '/projects',
+  //   icon: 'i-solar-folder-with-files-outline',
+  // },
+  // {
+  //   name: 'Articles',
+  //   path: '/articles',
+  //   icon: 'i-solar-document-add-outline',
+  // },
+  // {
+  //   name: 'Lab',
+  //   path: '/lab',
+  //   icon: 'i-solar-programming-outline',
+  // },
+  // {
+  //   name: "What's in my bag?",
+  //   path: '/whats-in-my-bag',
+  //   icon: 'i-solar-backpack-outline',
+  // },
+  // {
+  //   name: 'Bookmarks',
+  //   path: '/bookmarks',
+  //   icon: 'i-solar-bookmark-outline',
+  // },
 ];
 </script>
 
