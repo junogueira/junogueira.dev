@@ -104,8 +104,9 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
+    exclude: ['/ignore/**'],
     cacheMaxAgeSeconds: 86400, // 1 day
-    sources: ['/api/__sitemap__/urls'],
+    // sources: ['/api/__sitemap__/urls'],
   },
 
   ui: {
