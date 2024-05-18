@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 const colorMode = useColorMode();
 
 const isDark = computed({
@@ -19,7 +19,7 @@ const isDark = computed({
     >
       <Icon
         aria-hidden="true"
-        :name="isDark ? 'solar:sun-2-outline' : 'solar:moon-outline'"
+        :name="isDark ? 'i-solar-sun-2-outline' : 'i-solar-moon-outline'"
         class="h-5 w-5"
       />
       <span class="sr-only">Toggle theme</span>

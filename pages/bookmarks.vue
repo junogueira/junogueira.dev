@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 const description =
   "Awesome things I've found on the internet. This page is still WIP, I want to add search like bmrks.com";
 useSeoMeta({

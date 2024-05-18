@@ -18,6 +18,7 @@
   "dependencies": {
     "@iconify-json/ph": "^1.1.13",
     "@iconify-json/simple-icons": "^1.1.101",
+    "@iconify-json/solar": "^1.1.9",
     "@nuxt/image": "1.7.0",
     "@nuxt/ui": "^2.16.0",
     "vue-use-fixed-header": "^2.0.3"

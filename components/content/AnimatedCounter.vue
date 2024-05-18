@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 const target = ref(null);
 const targetIsVisible = useElementVisibility(target);
 

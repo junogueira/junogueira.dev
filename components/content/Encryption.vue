@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 const chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
 const charsLength = chars.length;
 const randomChar = () => chars[Math.floor(Math.random() * charsLength)];

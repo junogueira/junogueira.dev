@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 const fast = ref(false);
 const streakSpeed = computed(() => (fast.value ? '0.5s' : '2s'));
 </script>
