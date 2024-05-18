@@ -1,14 +1,14 @@
 <template>
-  <div class="px-4 py-8 flex items-center justify-center">
+  <div class="flex items-center justify-center px-4 py-8">
     <div
-      class="font-extrabold text-lg [text-wrap:balance] text-gray-700 dark:text-gray-200"
+      class="text-lg font-extrabold text-gray-700 [text-wrap:balance] dark:text-gray-200"
     >
       We design and develop the best
       <span
-        class="inline-flex flex-col h-[calc(theme(fontSize.lg)*theme(lineHeight.tight))] overflow-hidden"
+        class="inline-flex h-[calc(theme(fontSize.lg)*theme(lineHeight.tight))] flex-col overflow-hidden"
       >
         <ul
-          class="block text-left leading-tight [&_li]:block animate-text-slide"
+          class="animate-text-slide block text-left leading-tight [&_li]:block"
         >
           <li class="text-indigo-500">Mobile apps</li>
           <li class="text-rose-500">Websites</li>

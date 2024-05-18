@@ -4,7 +4,6 @@ Zooper is a beautiful personal portfolio template for developers, programmers, f
 
 ![Zooper template home preview](https://zooper.pages.dev/preview.jpg)
 
-
 ## Features
 
 Full features blog 📝.

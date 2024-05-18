@@ -1,6 +1,12 @@
+<script lang="ts" setup>
+const { data: projects } = await useAsyncData('projects-home', () =>
+  queryContent('/projects').limit(3).find(),
+);
+</script>
+
 <template>
   <div>
-    <h2 class="uppercase text-xs font-semibold text-gray-400 mb-6">
+    <h2 class="mb-6 text-xs font-semibold uppercase text-gray-400">
       FEATURED PROEJCTS
     </h2>
     <div class="space-y-4">
@@ -10,7 +16,7 @@
         :project="project"
       />
     </div>
-    <div class="flex items-center justify-center mt-6 text-sm">
+    <div class="mt-6 flex items-center justify-center text-sm">
       <UButton
         label="All Projects &rarr;"
         to="/projects"
@@ -20,9 +26,3 @@
     </div>
   </div>
 </template>
-
-<script lang="ts" setup>
-const { data: projects } = await useAsyncData("projects-home", () =>
-  queryContent("/projects").limit(3).find()
-);
-</script>

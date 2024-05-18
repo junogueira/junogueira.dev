@@ -1,58 +1,81 @@
+<script setup>
+defineProps({
+  title: {
+    type: String,
+    required: true,
+  },
+  description: {
+    type: String,
+    required: true,
+  },
+  showUsageTab: {
+    type: Boolean,
+    default: true,
+  },
+  showCreditTab: {
+    type: Boolean,
+    default: false,
+  },
+});
+
+const tab = ref('preview');
+</script>
+
 <template>
   <div>
     <h2 class="text-sm font-semibold">{{ title }}</h2>
-    <p class="text-gray-500 text-sm">
+    <p class="text-sm text-gray-500">
       {{ description }}
     </p>
     <div
-      class="mt-2 border dark:border-white/10 rounded-lg shadow-sm overflow-hidden"
+      class="mt-2 overflow-hidden rounded-lg border shadow-sm dark:border-white/10"
     >
-      <div class="p-2 flex items-center gap-2 border-b dark:border-white/10">
-        <div class="flex items-center w-full">
+      <div class="flex items-center gap-2 border-b p-2 dark:border-white/10">
+        <div class="flex w-full items-center">
           <UButton
-            @click="tab = 'preview'"
             label="Preview"
             variant="soft"
             color="white"
             size="xs"
             class="relative hover:bg-gray-100 hover:text-gray-600 dark:hover:bg-gray-800 dark:hover:text-gray-300"
             :class="{ 'active-tab': tab === 'preview' }"
+            @click="tab = 'preview'"
           />
           <UButton
-            @click="tab = 'code'"
             label="Code"
             variant="soft"
             color="white"
             size="xs"
             class="relative hover:bg-gray-100 hover:text-gray-600 dark:hover:bg-gray-800 dark:hover:text-gray-300"
             :class="{ 'active-tab': tab === 'code' }"
+            @click="tab = 'code'"
           />
           <UButton
             v-if="showUsageTab"
-            @click="tab = 'usage'"
             label="Usage"
             variant="soft"
             color="white"
             size="xs"
             class="relative hover:bg-gray-100 hover:text-gray-600 dark:hover:bg-gray-800 dark:hover:text-gray-300"
             :class="{ 'active-tab': tab === 'usage' }"
+            @click="tab = 'usage'"
           />
           <UButton
             v-if="showCreditTab"
-            @click="tab = 'credit'"
             label="Credits"
             variant="soft"
             color="white"
             size="xs"
             class="relative hover:bg-gray-100 hover:text-gray-600 dark:hover:bg-gray-800 dark:hover:text-gray-300"
             :class="{ 'active-tab': tab === 'credit' }"
+            @click="tab = 'credit'"
           />
         </div>
       </div>
       <div>
         <div
           v-if="tab === 'preview'"
-          class="bg-gray-100 dark:bg-gray-900 overflow-hidden"
+          class="overflow-hidden bg-gray-100 dark:bg-gray-900"
         >
           <slot name="preview" />
         </div>
@@ -64,25 +87,8 @@
   </div>
 </template>
 
-<script setup>
-defineProps({
-  title: String,
-  description: String,
-  showUsageTab: {
-    type: Boolean,
-    default: true,
-  },
-  showCreditTab: {
-    type: Boolean,
-    default: false,
-  },
-});
-
-const tab = ref("preview");
-</script>
-
 <style scoped>
 .active-tab {
-  @apply after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-primary-500 after:bottom-[-9px] after:left-0 after:pointer-events-none;
+  @apply after:bg-primary-500 after:pointer-events-none after:absolute after:bottom-[-9px] after:left-0 after:h-0.5 after:w-full after:content-[''];
 }
 </style>
