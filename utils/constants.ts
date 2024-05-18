@@ -1,6 +1,6 @@
 export const SITE_NAME = 'Ju Nogueira';
 export const SITE_IMAGE = '/avatar.jpg';
-export const SITE_OG_IMAGE = '/ogimage.jpg';
+export const SITE_OG_IMAGE = '/ogimage.png';
 export const SITE_LANGUAGE = 'en-US';
 export const SITE_DESCRIPTION =
   "I'm Ju, a software engineer and builder from Brazil. I specialize in building web applications and sites using Javascript, Vue, Nuxt & Node.";
