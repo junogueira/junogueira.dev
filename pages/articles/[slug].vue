@@ -6,11 +6,23 @@ useSeoMeta({
   twitterCard: 'summary_large_image',
   articleAuthor: 'Fayaz Ahmed',
 });
+
+// useSeoMeta({
+//   title,
+//   ogTitle: title,
+//   description,
+//   ogDescription: description,
+//   articleModifiedTime: post.value?.updatedAt || post.value.createdAt,
+//   ogImage,
+//   twitterImage: ogImage,
+// });
+
+// useSchemaOrg(defineArticle(useDefineArticle(post.value)));
 </script>
 <template>
   <div>
     <div
-      class="prose dark:prose-invert prose-blockquote:not-italic prose-pre:bg-gray-900 prose-img:ring-1 prose-img:ring-gray-200 dark:prose-img:ring-white/10 prose-img:rounded-lg"
+      class="prose dark:prose-invert prose-blockquote:not-italic prose-pre:bg-gray-900 prose-img:rounded-lg prose-img:ring-1 prose-img:ring-gray-200 dark:prose-img:ring-white/10"
     >
       <ContentDoc v-slot="{ doc }" tag="article">
         <article>

@@ -4,7 +4,11 @@ const headerRef = ref(null);
 const { styles } = useFixedHeader(headerRef);
 
 const items = [
-  { name: 'Home', path: '/', icon: 'solar:home-smile-outline' },
+  {
+    name: 'Home',
+    path: '/',
+    icon: 'solar:home-smile-outline',
+  },
   {
     name: 'Projects',
     path: '/projects',
@@ -15,7 +19,11 @@ const items = [
     path: '/articles',
     icon: 'solar:document-add-outline',
   },
-  { name: 'Lab', path: '/lab', icon: 'heroicons:beaker' },
+  {
+    name: 'Lab',
+    path: '/lab',
+    icon: 'heroicons:beaker',
+  },
   {
     name: "What's in my bag?",
     path: '/whats-in-my-bag',

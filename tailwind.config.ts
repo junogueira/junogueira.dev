@@ -8,6 +8,11 @@ export default <Partial<Config>>{
         zoopdark:
           'rgba(10, 10, 10, 0.2) 0px 1.2672px 1.2672px 0px, rgba(10, 10, 10, 0.2) 0px 5.06879px 10.1376px 0px',
       },
+      colors: {
+        twitter: '#1da1f2',
+        github: '#24292f',
+        linkedin: '#0077B5',
+      },
     },
     fontFamily: {
       sans: [
@@ -40,4 +45,12 @@ export default <Partial<Config>>{
       ],
     },
   },
+  safelist: [
+    'hover:text-twitter',
+    'hover:text-github',
+    'hover:text-linkedin',
+    'group-hover:border-twitter',
+    'group-hover:border-github',
+    'group-hover:border-linkedin',
+  ],
 };

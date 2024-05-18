@@ -1,24 +1,21 @@
 <script lang="ts" setup>
+const siteMeta = useSiteMeta();
+
 const links = [
   {
     name: 'Twitter',
-    url: 'https://twitter.com/fayazara',
-    icon: 'mdi:twitter',
+    url: siteMeta.socials.twitter,
+    icon: 'i-simple-icons-twitter',
   },
   {
     name: 'GitHub',
-    url: 'https://github.com/fayazara',
-    icon: 'mdi:github',
+    url: siteMeta.socials.github,
+    icon: 'i-simple-icons-github',
   },
   {
     name: 'Linkedin',
-    url: 'https://www.linkedin.com/in/fayaz-aralikatti/',
-    icon: 'mdi:linkedin',
-  },
-  {
-    name: 'Telegram',
-    url: 'https://t.me/fayazara',
-    icon: 'mdi:telegram',
+    url: siteMeta.socials.linkedin,
+    icon: 'i-simple-icons-linkedin',
   },
 ];
 </script>
@@ -35,15 +32,21 @@ const links = [
         :to="link.url"
         target="_blank"
         external
-        class="group flex items-end gap-4 dark:hover:text-gray-300"
+        :class="[
+          `hover:text-${link.name.toLowerCase()}`,
+          'group flex items-end gap-4 transition-colors dark:hover:text-gray-300',
+        ]"
       >
-        <span class="text-sm">
+        <span class="text-sm leading-none">
           {{ link.name }}
         </span>
         <div
-          class="flex-1 border-b border-dashed border-gray-300 group-hover:border-gray-700 dark:border-gray-800"
+          :class="[
+            `group-hover:border-${link.name.toLowerCase()}`,
+            'flex-1 border-b border-dashed border-gray-300 transition-colors duration-300 dark:border-gray-800 dark:group-hover:border-gray-700',
+          ]"
         ></div>
-        <Icon :name="link.icon" class="h-6 w-6"></Icon>
+        <UIcon :name="link.icon" class="size-5"></UIcon>
       </NuxtLink>
     </div>
   </div>

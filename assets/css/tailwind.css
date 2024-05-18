@@ -4,6 +4,6 @@
 
 @layer base {
   body {
-    @apply min-h-full font-sans text-gray-900 antialiased [overflow-anchor:none] dark:text-gray-400;
+    @apply min-h-full bg-gray-50 font-sans text-gray-900 antialiased [overflow-anchor:none] dark:bg-black dark:text-gray-400;
   }
 }
