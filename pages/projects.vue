@@ -12,7 +12,7 @@ const { data: projects } = await useAsyncData('projects-all', () =>
 </script>
 
 <template>
-  <main class="min-h-screen">
+  <div>
     <AppHeader class="mb-12" title="Projects" :description="description" />
     <div class="space-y-4">
       <AppProjectCard
@@ -21,5 +21,5 @@ const { data: projects } = await useAsyncData('projects-all', () =>
         :project="project"
       />
     </div>
-  </main>
+  </div>
 </template>

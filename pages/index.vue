@@ -1,5 +1,5 @@
 <template>
-  <main class="min-h-screen">
+  <div>
     <div class="space-y-24">
       <HomeIntro />
       <HomeSocialLinks />
@@ -7,5 +7,5 @@
       <HomeFeaturedArticles />
       <HomeNewsletter />
     </div>
-  </main>
+  </div>
 </template>

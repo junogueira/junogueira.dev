@@ -4,7 +4,9 @@
   <div class="space-y-32">
     <AppNavbar />
     <UContainer>
-      <slot />
+      <main class="min-h-screen">
+        <slot />
+      </main>
     </UContainer>
     <AppFooter />
   </div>

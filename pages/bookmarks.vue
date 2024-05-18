@@ -100,7 +100,7 @@ function getThumbnail(url) {
 </script>
 
 <template>
-  <main class="min-h-screen">
+  <div>
     <AppHeader class="mb-8" title="Bookmarks" :description="description" />
     <ul class="space-y-2">
       <li v-for="bookmark in bookmarks" :key="bookmark.id">
@@ -124,5 +124,5 @@ function getThumbnail(url) {
         </a>
       </li>
     </ul>
-  </main>
+  </div>
 </template>
