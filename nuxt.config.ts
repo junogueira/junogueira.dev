@@ -58,6 +58,7 @@ export default defineNuxtConfig({
     '@nuxtjs/fontaine',
     '@nuxtjs/seo',
     '@vueuse/nuxt',
+    'nuxt-gtag',
     'nuxt-icon',
   ],
 
