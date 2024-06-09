@@ -38,7 +38,7 @@ const { data: articles } = await useAsyncData('all-articles', () =>
 
 <template>
   <div>
-    <AppHeader class="mb-16" title="Articles" :description="description" />
+    <PageHeader class="mb-16" title="Articles" :description="description" />
     <ul class="space-y-16">
       <li v-for="(article, id) in articles" :key="id">
         <AppArticleCard :article="article" />

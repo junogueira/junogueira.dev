@@ -1,6 +1,8 @@
 <script lang="ts" setup>
+import type { Project } from '~/types';
+
 const { data: projects } = await useAsyncData('projects-home', () =>
-  queryContent('/projects').limit(3).find(),
+  queryContent<Project>('/projects').limit(3).find(),
 );
 </script>
 
@@ -10,19 +12,22 @@ const { data: projects } = await useAsyncData('projects-home', () =>
       FEATURED PROEJCTS
     </h2>
     <div class="space-y-4">
-      <AppProjectCard
+      <ProjectCard
         v-for="(project, id) in projects"
         :key="id"
         :project="project"
       />
     </div>
-    <div class="mt-6 flex items-center justify-center text-sm">
+    <!-- <div class="mt-6 flex items-center justify-center text-sm">
       <UButton
-        label="All Projects &rarr;"
+        label="All Projects"
         to="/projects"
         variant="link"
         color="gray"
+        icon="i-solar-arrow-right-linear"
+        trailing
+        :ui="{ icon: { size: { sm: 'h-4 w-4' } } }"
       />
-    </div>
+    </div> -->
   </div>
 </template>

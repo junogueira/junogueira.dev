@@ -52,5 +52,9 @@ export default <Partial<Config>>{
     'group-hover:border-twitter',
     'group-hover:border-github',
     'group-hover:border-linkedin',
+    {
+      // project status badge
+      pattern: /(bg|text|ring)-(red|emerald|yellow)-(.)/,
+    },
   ],
 };

@@ -16,7 +16,7 @@ const other = items.value.filter(item => item.category === 'others');
 
 <template>
   <div>
-    <AppHeader
+    <PageHeader
       class="mb-12"
       title="What's in my bag?"
       :description="description"

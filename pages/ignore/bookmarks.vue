@@ -101,7 +101,7 @@ function getThumbnail(url) {
 
 <template>
   <div>
-    <AppHeader class="mb-8" title="Bookmarks" :description="description" />
+    <PageHeader class="mb-8" title="Bookmarks" :description="description" />
     <ul class="space-y-2">
       <li v-for="bookmark in bookmarks" :key="bookmark.id">
         <a

@@ -60,6 +60,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     'nuxt-gtag',
     'nuxt-icon',
+    'nuxt-typed-router',
   ],
 
   ogImage: {
@@ -111,6 +112,6 @@ export default defineNuxtConfig({
   },
 
   ui: {
-    icons: ['heroicons', 'simple-icons', 'solar'],
+    icons: ['simple-icons', 'solar'],
   },
 });

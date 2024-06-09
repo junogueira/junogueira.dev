@@ -8,7 +8,7 @@ useSeoMeta({
 
 <template>
   <div>
-    <AppHeader class="mb-12" title="Lab" :description="description" />
+    <PageHeader class="mb-12" title="Lab" :description="description" />
     <div class="space-y-24">
       <ContentList v-slot="{ list }" path="/lab">
         <ContentQuery
