@@ -31,13 +31,13 @@ useSeoMeta({
     </p>
 
     <p>
-      Currently, I work as a Full Stack Engineer at
+      Currently, I work as a Frontend Engineer at
       <NuxtLink
         external
-        to="https://finoo.io/"
+        to="https://hubstaff.com/"
         target="_blank"
         class="underline"
-        >Finoo</NuxtLink
+        >Hubstaff</NuxtLink
       >, and in my free time, I'm always tinkering with some app or site that I
       am building, experimenting with SEO, or even designing a new project.
     </p>
